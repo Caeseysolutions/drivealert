@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://drivealert.eu/sitemap.xml
+Disallow: /*?*
+Allow: /*?lang=
