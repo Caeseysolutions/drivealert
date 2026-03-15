@@ -438,8 +438,14 @@ footer{background:var(--bg);border-top:1px solid var(--border2);padding:3.5rem 0
   .products-float{max-width:400px;margin:0 auto}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
+@media(max-width:1024px){
+  .hero-grid,.product-layout,.codriver-layout{grid-template-columns:1fr;gap:3rem}
+  .products-float{max-width:400px;margin:0 auto}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
 @media(max-width:768px){
-  html{font-size:16px}
+  html{font-size:15px}
+  body{overflow-x:hidden}
   .steps-grid{grid-template-columns:1fr 1fr}
   .reviews-grid{grid-template-columns:1fr}
   .legal-grid{grid-template-columns:1fr}
@@ -450,12 +456,29 @@ footer{background:var(--bg);border-top:1px solid var(--border2);padding:3.5rem 0
   .strip-div{display:none}
   .nav-links .nav-link{display:none}
   .topbar-inner{padding:0.7rem 1rem}
-  .hero-h1{font-size:2.8rem}
+  .hero-h1{font-size:2.2rem}
   .float-card:nth-child(2){margin-top:0}
+  .products-float{grid-template-columns:1fr;max-width:300px;margin:0 auto}
+  .hero-grid{gap:2rem;padding:2rem 0}
+  .section-inner{padding:0 1rem}
+  .hero-trust{gap:0.5rem}
+  .trust-pill{font-size:0.72rem;padding:0.3rem 0.7rem}
+  .cta-group{flex-direction:column}
+  .btn-primary,.btn-outline{width:100%;text-align:center;justify-content:center}
+  .mkt-grid,.mkt-grid-sm{grid-template-columns:repeat(2,1fr)}
+  .nav-lang{gap:0.1rem}
+  .lang-btn{padding:0.2rem 0.4rem;font-size:0.7rem}
+  .nav-cta{padding:0.4rem 0.8rem;font-size:0.8rem}
+  #hero{min-height:auto;padding-top:60px;padding-bottom:2rem}
 }
 @media(max-width:480px){
+  html{font-size:14px}
   .steps-grid{grid-template-columns:1fr}
   .how-tabs{flex-wrap:wrap}
+  .hero-h1{font-size:1.9rem}
+  .products-float{grid-template-columns:1fr}
+  .strip-inner{gap:0.5rem}
+  .strip-num{font-size:1.5rem}
 }
 </style>
 </head>
@@ -523,6 +546,13 @@ footer{background:var(--bg);border-top:1px solid var(--border2);padding:3.5rem 0
             <div class="float-sub" id="fc-co-sub">Road Safety Device</div>
             <span class="float-tag safety" id="fc-co-tag">4M+ Community · CarPlay</span>
             <div class="float-price" style="font-size:1rem;color:var(--amber)">Check price on Amazon →</div>
+          </a>
+          <a href="#dashcam" class="float-card" style="grid-column:1/-1">
+            <span class="float-emoji">📷</span>
+            <div class="float-name">Nextbase 622GW</div>
+            <div class="float-sub">Premium 4K Dashcam</div>
+            <span class="float-tag" style="background:rgba(59,130,246,0.15);color:#3B82F6;border:1px solid rgba(59,130,246,0.3)">4K · Emergency SOS · CarPlay</span>
+            <div class="float-price" style="font-size:1rem;color:#3B82F6">Check price on Amazon →</div>
           </a>
         </div>
       </div>
@@ -1063,6 +1093,45 @@ footer{background:var(--bg);border-top:1px solid var(--border2);padding:3.5rem 0
 </section>
 
 
+<!-- ═══ NEXTBASE DASHCAM SECTION ═══ -->
+<section id="dashcam" style="background:var(--bg2);padding:7rem 0;border-top:1px solid var(--border2)">
+  <div class="section-inner">
+    <div class="product-layout">
+      <div class="product-content">
+        <p class="eyebrow">PRODUCT 03</p>
+        <h2 class="section-title">Your drive. <em>On record.</em></h2>
+        <p class="section-lead">The Nextbase 622GW is Europe's most awarded dashcam. 4K Ultra HD, Emergency SOS that automatically calls rescue services, Apple CarPlay integration and Amazon Alexa. One device that protects you before, during and after every drive.</p>
+        <ul class="feature-list">
+          <li><strong>4K Ultra HD</strong> — licence plates readable at distance, day and night</li>
+          <li><strong>Emergency SOS</strong> — automatically alerts emergency services if you can't</li>
+          <li><strong>Apple CarPlay & Android Auto</strong> — seamless in-car integration</li>
+          <li><strong>Amazon Alexa</strong> — hands-free voice control</li>
+          <li><strong>What3words</strong> — pinpoint location in emergencies</li>
+          <li><strong>No subscription needed</strong> — all core features work out of the box</li>
+        </ul>
+        <div class="price-block">
+          <span class="price-main" style="font-size:1.5rem;color:#3B82F6">Check current price →</span>
+        </div>
+        <a href="https://amzn.to/470Ajb2" class="btn-primary nextbase-btn" target="_blank" rel="nofollow sponsored noopener" style="background:#3B82F6">Order Nextbase 622GW →</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1rem;align-items:center;justify-content:center">
+        <div style="background:var(--card);border:1px solid rgba(59,130,246,0.3);border-radius:16px;padding:2rem;text-align:center;width:100%;max-width:320px">
+          <div style="font-size:4rem;margin-bottom:1rem">📷</div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-size:1.8rem;font-weight:900;color:#F0F4F8;margin-bottom:0.5rem">Nextbase 622GW</div>
+          <div style="font-size:0.85rem;color:var(--muted);margin-bottom:1.5rem">4K Dashcam · Emergency SOS</div>
+          <div style="display:flex;flex-direction:column;gap:0.5rem">
+            <div style="background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.3);border-radius:6px;padding:0.5rem;font-size:0.8rem;color:#3B82F6;font-weight:700">📡 4K Ultra HD Recording</div>
+            <div style="background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:6px;padding:0.5rem;font-size:0.8rem;color:#EF4444;font-weight:700">🆘 Emergency SOS</div>
+            <div style="background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.3);border-radius:6px;padding:0.5rem;font-size:0.8rem;color:#22C55E;font-weight:700">🍎 Apple CarPlay</div>
+            <div style="background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.3);border-radius:6px;padding:0.5rem;font-size:0.8rem;color:var(--amber);font-weight:700">🎙️ Amazon Alexa</div>
+          </div>
+          <div style="margin-top:1.5rem;font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted)">67% Market Share in Europe</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══ MARKETS SECTION ═══ -->
 <section id="markets" style="background:var(--bg3);padding:7rem 0;border-top:1px solid var(--border2)">
   <div class="section-inner">
@@ -1390,7 +1459,45 @@ footer{background:var(--bg);border-top:1px solid var(--border2);padding:3.5rem 0
 <script>
 
 
-/* ── LEGAL TAB SWITCHER ── */
+/* ── SMART AFFILIATE LINKS BY LANGUAGE ── */
+var affiliateLinks = {
+  'pdisc': {
+    'de': 'https://amzn.to/4biaIeL',
+    'nl': 'https://amzn.to/3Ng3ikt',
+    'fr': 'https://amzn.to/4uNY4NV',
+    'en': 'https://amzn.to/4biaIeL'
+  },
+  'codriver': {
+    'de': 'https://amzn.to/4lomE3v',
+    'nl': 'https://amzn.to/40yfakL',
+    'fr': 'https://amzn.to/4cTXiIF',
+    'en': 'https://amzn.to/4lomE3v'
+  },
+  'nextbase': {
+    'de': 'https://amzn.to/470Ajb2',
+    'nl': 'https://amzn.to/4se4Zyb',
+    'fr': 'https://amzn.to/3PDEvYb',
+    'en': 'https://amzn.to/470Ajb2'
+  }
+};
+
+function updateAffiliateLinks(lang) {
+  var l = lang || 'en';
+  // P-DISC buttons
+  document.querySelectorAll('#pd-btn, #cta-pdisc').forEach(function(el) {
+    el.href = affiliateLinks.pdisc[l] || affiliateLinks.pdisc.en;
+  });
+  // CO-DRIVER buttons
+  document.querySelectorAll('#co-btn, #cta-co').forEach(function(el) {
+    el.href = affiliateLinks.codriver[l] || affiliateLinks.codriver.en;
+  });
+  // Nextbase buttons
+  document.querySelectorAll('.nextbase-btn').forEach(function(el) {
+    el.href = affiliateLinks.nextbase[l] || affiliateLinks.nextbase.en;
+  });
+}
+
+
 function showLegal(t){
   document.querySelectorAll('.legal-tab-content').forEach(function(e){
     e.style.display='none'; e.classList.remove('active');
@@ -1822,6 +1929,7 @@ function setLang(l){
     b.classList.toggle('active',b.textContent===l.toUpperCase());
   });
   document.documentElement.lang=l;
+  updateAffiliateLinks(l);
   try{localStorage.setItem('da_lang',l);}catch(e){}
 }
 (function(){
@@ -1880,7 +1988,7 @@ function setLang(l){
     <div class="modal-section">
       <h2><span>01</span> Who we are</h2>
       <p>DriveAlert is an independent affiliate website that reviews and recommends OOONO driving products. We do not sell products directly. We earn a commission when visitors purchase products through our affiliate links at no additional cost to them.</p>
-      <div class="modal-highlight"><strong>Contact:</strong> info@caeseysolutions.com</div>
+      <div class="modal-highlight"><strong>Contact:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ce5e2eae3ccefede9ffe9f5ffe3e0f9f8e5e3e2ffa2efe3e1">[email&#160;protected]</a></div>
     </div>
     <div class="modal-section">
       <h2><span>02</span> What data we collect</h2>
@@ -1949,7 +2057,7 @@ function setLang(l){
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function showModal(name){
   document.getElementById('modal-'+name).classList.add('open');
   document.body.style.overflow='hidden';
@@ -1959,14 +2067,4 @@ function closeModal(name){
   document.body.style.overflow='';
 }
 // Close on click outside modal box
-document.querySelectorAll('.modal-overlay').forEach(function(overlay){
-  overlay.addEventListener('click',function(e){
-    if(e.target===overlay){
-      overlay.classList.remove('open');
-      document.body.style.overflow='';
-    }
-  });
-});
-</script>
-</body>
-</html>
+document.querySelectorAll('.moda
