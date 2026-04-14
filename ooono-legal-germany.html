@@ -16,7 +16,7 @@
 <link rel="alternate" hreflang="fr" href="https://drivealert.eu/ooono-legal-allemagne">
 <link rel="alternate" hreflang="x-default" href="https://drivealert.eu/ooono-legal-germany">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Is OOONO Legal in Germany?","description":"The OOONO P-DISC NO3 is E1-approved in Germany. The CO-DRIVER NO2 is legal under StVO §23.","url":"https://drivealert.eu/ooono-legal-germany","publisher":{"@type":"Organization","name":"DriveAlert"},"datePublished":"2026-04-02","dateModified":"2026-04-02"}
+{"@context":"https://schema.org","@type":"Article","headline":"Is OOONO Legal in Germany?","description":"The OOONO P-DISC NO3 is E1-approved in Germany. The CO-DRIVER NO2 is legal under StVO §23.","url":"https://drivealert.eu/ooono-legal-germany","publisher":{"@type":"Organization","name":"DriveAlert"},"datePublished":"2026-04-02","dateModified":"2026-04-14"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -31,6 +31,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NX1B2429ZH"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NX1B2429ZH');</script>
+<script>
+(function(){
+  var lang=(navigator.language||navigator.userLanguage||'en').toLowerCase().substring(0,2);
+  var links={
+    pdisc:   {nl:'https://amzn.to/4tQRTr1',fr:'https://amzn.to/4uNY4NV',de:'https://amzn.to/4biaIeL',en:'https://amzn.to/4biaIeL'},
+    codriver:{nl:'https://amzn.to/48ulfDa',fr:'https://amzn.to/4cTXiIF',de:'https://amzn.to/4lomE3v',en:'https://amzn.to/428K0Ba'}
+  };
+  var lk=(lang==='nl'||lang==='de'||lang==='fr')?lang:'en';
+  document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('[data-aff="pdisc"]').forEach(function(el){el.href=links.pdisc[lk];});
+    document.querySelectorAll('[data-aff="codriver"]').forEach(function(el){el.href=links.codriver[lk];});
+  });
+})();
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:18px}
@@ -168,14 +182,14 @@ footer a{color:var(--amber);text-decoration:none}
   <p>Many German drivers buy both products. The P-DISC NO3 handles parking — completely legal, officially approved, no caveats. The CO-DRIVER NO2 handles speed camera warnings on the road — used at your own responsibility, as is the case with GPS navigation apps that show camera locations.</p>
 
   <div class="cta-split">
-    <a href="https://amzn.to/4biaIeL" class="cta-card" target="_blank" rel="nofollow sponsored noopener">
+    <a href="https://amzn.to/4biaIeL" data-aff="pdisc" class="cta-card" target="_blank" rel="nofollow sponsored noopener">
       <div class="cta-card-emoji">🅿️</div>
       <div class="cta-card-name">P-DISC NO3</div>
       <div class="cta-card-status">✓ E1 Approved in Germany</div>
       <span class="btn-amber">Order on Amazon →</span>
       <p class="aff-note">Affiliate link</p>
     </a>
-    <a href="https://amzn.to/4lomE3v" class="cta-card" target="_blank" rel="nofollow sponsored noopener">
+    <a href="https://amzn.to/4lomE3v" data-aff="codriver" class="cta-card" target="_blank" rel="nofollow sponsored noopener">
       <div class="cta-card-emoji">🛡️</div>
       <div class="cta-card-name">CO-DRIVER NO2</div>
       <div class="cta-card-status">⚠ Driver's responsibility — StVO §23</div>

@@ -16,7 +16,7 @@
 <link rel="alternate" hreflang="fr" href="https://drivealert.eu/ooono-europe">
 <link rel="alternate" hreflang="x-default" href="https://drivealert.eu/ooono-works-europe">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Does OOONO Work in Europe?","description":"OOONO CO-DRIVER NO2 works in 80+ European countries with 4M+ drivers.","url":"https://drivealert.eu/ooono-works-europe","publisher":{"@type":"Organization","name":"DriveAlert"},"datePublished":"2026-04-02","dateModified":"2026-04-02"}
+{"@context":"https://schema.org","@type":"Article","headline":"Does OOONO Work in Europe?","description":"OOONO CO-DRIVER NO2 works in 80+ European countries with 4M+ drivers.","url":"https://drivealert.eu/ooono-works-europe","publisher":{"@type":"Organization","name":"DriveAlert"},"datePublished":"2026-04-02","dateModified":"2026-04-14"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -31,6 +31,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NX1B2429ZH"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NX1B2429ZH');</script>
+<script>
+(function(){
+  var lang=(navigator.language||navigator.userLanguage||'en').toLowerCase().substring(0,2);
+  var links={
+    pdisc:   {nl:'https://amzn.to/4tQRTr1',fr:'https://amzn.to/4uNY4NV',de:'https://amzn.to/4biaIeL',en:'https://amzn.to/4biaIeL'},
+    codriver:{nl:'https://amzn.to/48ulfDa',fr:'https://amzn.to/4cTXiIF',de:'https://amzn.to/4lomE3v',en:'https://amzn.to/428K0Ba'}
+  };
+  var lk=(lang==='nl'||lang==='de'||lang==='fr')?lang:'en';
+  document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('[data-aff="pdisc"]').forEach(function(el){el.href=links.pdisc[lk];});
+    document.querySelectorAll('[data-aff="codriver"]').forEach(function(el){el.href=links.codriver[lk];});
+  });
+})();
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:18px}
@@ -173,7 +187,7 @@ footer a{color:var(--amber);text-decoration:none}
   <div class="cta-block">
     <h3>One device. <em>All of Europe.</em></h3>
     <p>No subscription. No monthly fees. Works in 80+ countries. One-time purchase.</p>
-    <a href="https://amzn.to/4lomE3v" class="btn-primary" target="_blank" rel="nofollow sponsored noopener">Order CO-DRIVER NO2 →</a>
+    <a href="https://amzn.to/4lomE3v" data-aff="codriver" class="btn-primary" target="_blank" rel="nofollow sponsored noopener">Order CO-DRIVER NO2 →</a>
     <a href="/" class="btn-secondary">See full site</a>
     <p class="aff-note">Affiliate link — we earn a small commission at no cost to you.</p>
   </div>
